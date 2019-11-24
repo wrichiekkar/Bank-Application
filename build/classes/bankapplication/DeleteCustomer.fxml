@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapplication.DeleteCustomerController">
+   <children>
+      <Label layoutX="254.0" layoutY="50.0" text="Delete Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font></Label>
+      <TextField fx:id="Name" layoutX="331.0" layoutY="227.0" onAction="#Name" prefHeight="39.0" prefWidth="233.0" promptText="Customer Name" />
+      <Button fx:id="Delete" layoutX="331.0" layoutY="405.0" mnemonicParsing="false" onAction="#Delete" prefHeight="39.0" prefWidth="233.0" text="Delete Customer" />
+      <Button fx:id="Back" layoutX="331.0" layoutY="497.0" mnemonicParsing="false" onAction="#Back" prefHeight="39.0" prefWidth="233.0" text="Back" />
+      <Label layoutX="165.0" layoutY="229.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="Error" layoutX="331.0" layoutY="324.0" prefHeight="27.0" prefWidth="272.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

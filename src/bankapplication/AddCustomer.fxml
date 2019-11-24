@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bankapplication.AddCustomerController">
+   <children>
+      <Label layoutX="261.0" layoutY="44.0" text="Add a Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font></Label>
+      <TextField fx:id="Name" layoutX="338.0" layoutY="171.0" onAction="#Name" prefHeight="39.0" prefWidth="234.0" promptText="Customer name" />
+      <Button fx:id="BackButton" layoutX="340.0" layoutY="499.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="39.0" prefWidth="234.0" text="Back" />
+      <Label layoutX="202.0" layoutY="177.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Button fx:id="AddCustomer" layoutX="340.0" layoutY="416.0" mnemonicParsing="false" onAction="#AddCustomer" prefHeight="39.0" prefWidth="234.0" text="Add Customer" />
+      <TextField fx:id="Password" layoutX="338.0" layoutY="266.0" onAction="#Password" prefHeight="39.0" prefWidth="234.0" promptText="Customer password" />
+      <Label layoutX="166.0" layoutY="268.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <Label fx:id="Error" layoutX="338.0" layoutY="344.0" onDragDetected="#Error" prefHeight="27.0" prefWidth="287.0" textFill="WHITE" />
+   </children>
+</AnchorPane>
